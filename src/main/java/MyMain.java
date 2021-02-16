@@ -13,9 +13,13 @@ public class MyMain {
                 for(int j = 0; j < insertion.size(); j++){
                     if(insertion.get(j)>list.get(i)){
                         insertion.add(j, list.get(i));
+                        break;
+                    }
+                    if(j == insertion.size()-1){
+                        insertion.add(list.get(i));
+                        break;
                     }
                 }
-                insertion.add(list.get(i));
             }
         }
             
